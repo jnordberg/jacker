@@ -1,4 +1,4 @@
-// built with package-js
+// built with jacker
 (function() {
 
 /* adaptation of Rasmus Andersson's normalizePath - http://jsperf.com/normalize-path */

@@ -1,2 +1,4 @@
 
-# package-js
+# jacker
+
+`npm install jacker`

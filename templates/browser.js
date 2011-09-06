@@ -1,5 +1,5 @@
 /*
-  package-js - browser.js
+  jacker - browser.js
 
   Synchronous module loading for javascript. Attemts to mimic node's
   module loading system and conforms to CommonJS module loading spec.
@@ -8,7 +8,7 @@
   in a production enviroment (lots of synchronous GET's to load everything
   is slow and could cause memory leaks).
 
-  Use package-js to build your project for production.
+  Use jacker to build your project for production.
 
   Author: Johan Nordberg <its@johan-nordberg.com>
 */
@@ -45,7 +45,7 @@ this.require = require;
 
 /* here's the place to implement script preprocessors.
    e.g. compiling CoffeeScript into javascript
-   remember to implement a preprocessor in package.js as well */
+   remember to implement a preprocessor in lib/preprocessor.js as well */
 function preprocess(source, type) {
   switch (type) {
     case 'coffee':
