@@ -1,0 +1,22 @@
+{
+  "name": "jacker",
+  "version": "0.1.0",
+  "author": {
+    "name" : "Johan Nordberg",
+    "email" : "its@johan-nordberg.com",
+    "url" : "http://johan-nordberg.com/"
+  },
+  "bin": {
+    "jacker": "./bin/jacker"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "http://github.com/jnordberg/jacker.git"
+  },
+  "dependencies": {
+    "uglify-js": "1.0.x",
+    "async": "0.1.9",
+    "optimist": "0.2.x"
+  },
+  "preferGlobal": true
+}
