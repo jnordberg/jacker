@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "uglify-js": "1.0.x",
-    "async": "0.1.9",
+    "async": "0.1.x",
     "coffee-script": "1.1.x",
-    "optimist": "0.2.x"
+    "optimist": "0.3.x"
   },
   "preferGlobal": true
 }
