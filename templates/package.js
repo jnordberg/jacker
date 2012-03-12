@@ -1,4 +1,5 @@
 // built with jacker
+var modules, require, _require;
 (function() {
 
 /* adaptation of Rasmus Andersson's normalizePath - http://jsperf.com/normalize-path */
@@ -31,18 +32,16 @@ function normalizePath(path) {
   return directories.join("/");
 };
 
-var modules = this.modules = {};
+modules = {};
 
-function _require(id, basePath) {
+_require = function(id, basePath) {
   if (basePath) id = normalizePath(basePath + '/' + id);
   return modules[id];
 };
-this._require = _require;
 
 /* dummy function to be overridden */
-function require(id, basePath) {
+require = function(id, basePath) {
   return _require(id, basePath);
 };
-this.require = require;
 
-}).apply(this);
+})();
