@@ -1,11 +1,12 @@
 {
   "name": "jacker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name" : "Johan Nordberg",
     "email" : "its@johan-nordberg.com",
     "url" : "http://johan-nordberg.com/"
   },
+  "main": "./lib/jacker.js",
   "bin": {
     "jacker": "./bin/jacker"
   },
@@ -16,7 +17,7 @@
   "dependencies": {
     "uglify-js": "1.0.x",
     "async": "0.1.x",
-    "coffee-script": "1.1.x",
+    "coffee-script": "1.2.x",
     "optimist": "0.3.x"
   },
   "preferGlobal": true
